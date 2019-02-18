@@ -1,0 +1,22 @@
+{
+  "name": "douyin",
+  "version": "1.0.0",
+  "description": "抖音页面练习",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lxx929/douyin.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/lxx929/douyin/issues"
+  },
+  "homepage": "https://github.com/lxx929/douyin#readme",
+  "devDependencies": {
+    "gulp-clean-css": "^4.0.0"
+  }
+}

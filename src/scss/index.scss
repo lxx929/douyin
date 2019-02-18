@@ -1,0 +1,88 @@
+@import "_minix.scss";
+@import "common.scss";
+html,
+body,
+.wrapper {
+    width: 100%;
+    height: 100%;
+}
+
+.wrapper {
+    @include box_flex;
+    @include direction(column);
+    position: relative;
+}
+
+header {
+    // flex-shrink: 0;
+    width: 100%;
+    z-index: 99;
+    height: pxTorem(60px);
+    background: linear-gradient(rgba(0, 0, 0, .3), rgba(255, 255, 255, 0));
+    @include box_flex;
+    @include align;
+    @include justify(space-between);
+    padding: 0 pxTorem(15px);
+    @include sizing;
+    color: #fff;
+    position: absolute;
+    top: 0;
+    left: 0;
+    span {
+        font-size: pxTorem(20px);
+    }
+    ol {
+        @include box_flex;
+        li {
+            padding: 0 pxTorem(5px);
+            &:first-child {
+                font-size: pxTorem(16px);
+                border-right: pxTorem(1px) solid rgb(175, 173, 173);
+            }
+        }
+    }
+}
+
+section {
+    width: 100%;
+    @include flex;
+    .tit {
+        position: relative;
+        img {
+            width: 100%;
+            display: block;
+        }
+        p {
+            font-size: pxTorem(24px);
+            text-align: center;
+            position: absolute;
+            bottom: pxTorem(30px);
+            left: 0;
+        }
+    }
+    .pic {}
+    .cont {
+        @include box_flex;
+        align-items: center;
+        justify-content: space-between;
+        .left {}
+        .right {}
+    }
+}
+
+footer {
+    width: 100%;
+    height: pxTorem(44px);
+    padding: 0 pxTorem(15px);
+    @include sizing;
+    background: rgb(192, 192, 192);
+    color: #fff;
+    ul {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        li {
+            margin-top: pxTorem(10px)
+        }
+    }
+}
